@@ -1,0 +1,19 @@
+[2.033s] Invoking command in '/home/roverto/rov/src/ultrasonic_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/rov/build/ultrasonic_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ultrasonic_driver build --build-base /home/roverto/rov/build/ultrasonic_driver/build install --record /home/roverto/rov/build/ultrasonic_driver/install.log --single-version-externally-managed install_data
+[2.427s] running egg_info
+[2.453s] writing ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/PKG-INFO
+[2.454s] writing dependency_links to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/dependency_links.txt
+[2.454s] writing requirements to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/requires.txt
+[2.454s] writing top-level names to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/top_level.txt
+[2.509s] reading manifest file '../../build/ultrasonic_driver/ultrasonic_driver.egg-info/SOURCES.txt'
+[2.511s] writing manifest file '../../build/ultrasonic_driver/ultrasonic_driver.egg-info/SOURCES.txt'
+[2.511s] running build
+[2.511s] running build_py
+[2.513s] running install
+[2.523s] running install_lib
+[2.551s] running install_data
+[2.552s] running install_egg_info
+[2.580s] removing '/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages/ultrasonic_driver-0.0.0-py3.12.egg-info' (and everything under it)
+[2.581s] Copying ../../build/ultrasonic_driver/ultrasonic_driver.egg-info to /home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages/ultrasonic_driver-0.0.0-py3.12.egg-info
+[2.583s] running install_scripts
+[2.774s] writing list of installed files to '/home/roverto/rov/build/ultrasonic_driver/install.log'
+[2.926s] Invoked command in '/home/roverto/rov/src/ultrasonic_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/rov/build/ultrasonic_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ultrasonic_driver build --build-base /home/roverto/rov/build/ultrasonic_driver/build install --record /home/roverto/rov/build/ultrasonic_driver/install.log --single-version-externally-managed install_data

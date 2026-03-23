@@ -1,0 +1,3 @@
+[console_scripts]
+motor_controller_node = motor_controller.motor_controller_node:main
+motors_forward = motor_controller.motors_forward:main

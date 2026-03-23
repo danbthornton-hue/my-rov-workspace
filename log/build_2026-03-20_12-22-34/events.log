@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000391] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.000677] (ultrasonic_driver) JobQueued: {'identifier': 'ultrasonic_driver', 'dependencies': OrderedDict()}
+[0.000702] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.020649] (ultrasonic_driver) JobStarted: {'identifier': 'ultrasonic_driver'}
+[0.099683] (-) TimerEvent: {}
+[0.200026] (-) TimerEvent: {}
+[0.300344] (-) TimerEvent: {}
+[0.400652] (-) TimerEvent: {}
+[0.501098] (-) TimerEvent: {}
+[0.601357] (-) TimerEvent: {}
+[0.701655] (-) TimerEvent: {}
+[0.802214] (-) TimerEvent: {}
+[0.902576] (-) TimerEvent: {}
+[1.003013] (-) TimerEvent: {}
+[1.103257] (-) TimerEvent: {}
+[1.203500] (-) TimerEvent: {}
+[1.303789] (-) TimerEvent: {}
+[1.404155] (-) TimerEvent: {}
+[1.504469] (-) TimerEvent: {}
+[1.604808] (-) TimerEvent: {}
+[1.705167] (-) TimerEvent: {}
+[1.805476] (-) TimerEvent: {}
+[1.905867] (-) TimerEvent: {}
+[2.006399] (-) TimerEvent: {}
+[2.107274] (-) TimerEvent: {}
+[2.208090] (-) TimerEvent: {}
+[2.209553] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_controller', 'build', '--build-base', '/home/roverto/rov/build/motor_controller/build', 'install', '--record', '/home/roverto/rov/build/motor_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/rov/src/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'SSH_CLIENT': '192.168.2.1 50277 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/roverto/rov/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/roverto/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/roverto/rov/install/ultrasonic_driver:/home/roverto/rov/install/motor_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/roverto/rov/build/motor_controller', 'SSH_CONNECTION': '192.168.2.1 50277 192.168.2.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/rov/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages:/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages:/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.215142] (ultrasonic_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ultrasonic_driver', 'build', '--build-base', '/home/roverto/rov/build/ultrasonic_driver/build', 'install', '--record', '/home/roverto/rov/build/ultrasonic_driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/rov/src/ultrasonic_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'SSH_CLIENT': '192.168.2.1 50277 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/roverto/rov/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/roverto/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/roverto/rov/install/ultrasonic_driver:/home/roverto/rov/install/motor_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/roverto/rov/build/ultrasonic_driver', 'SSH_CONNECTION': '192.168.2.1 50277 192.168.2.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/rov/build/ultrasonic_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages:/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages:/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.308214] (-) TimerEvent: {}
+[2.408633] (-) TimerEvent: {}
+[2.509109] (-) TimerEvent: {}
+[2.609362] (-) TimerEvent: {}
+[2.651708] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.655069] (ultrasonic_driver) StdoutLine: {'line': b'running egg_info\n'}
+[2.677640] (motor_controller) StdoutLine: {'line': b'writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO\n'}
+[2.678787] (motor_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt\n'}
+[2.680697] (motor_controller) StdoutLine: {'line': b'writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt\n'}
+[2.681085] (ultrasonic_driver) StdoutLine: {'line': b'writing ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/PKG-INFO\n'}
+[2.682185] (motor_controller) StdoutLine: {'line': b'writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt\n'}
+[2.686169] (motor_controller) StdoutLine: {'line': b'writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt\n'}
+[2.687714] (ultrasonic_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/dependency_links.txt\n'}
+[2.688773] (ultrasonic_driver) StdoutLine: {'line': b'writing requirements to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/requires.txt\n'}
+[2.689245] (ultrasonic_driver) StdoutLine: {'line': b'writing top-level names to ../../build/ultrasonic_driver/ultrasonic_driver.egg-info/top_level.txt\n'}
+[2.709444] (-) TimerEvent: {}
+[2.743591] (motor_controller) StdoutLine: {'line': b"reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[2.745407] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[2.745649] (motor_controller) StdoutLine: {'line': b'running build\n'}
+[2.745803] (ultrasonic_driver) StdoutLine: {'line': b"reading manifest file '../../build/ultrasonic_driver/ultrasonic_driver.egg-info/SOURCES.txt'\n"}
+[2.745962] (motor_controller) StdoutLine: {'line': b'running build_py\n'}
+[2.748025] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motor_controller_node.py -> /home/roverto/rov/build/motor_controller/build/lib/motor_controller\n'}
+[2.748243] (ultrasonic_driver) StdoutLine: {'line': b"writing manifest file '../../build/ultrasonic_driver/ultrasonic_driver.egg-info/SOURCES.txt'\n"}
+[2.748460] (ultrasonic_driver) StdoutLine: {'line': b'running build\n'}
+[2.748591] (motor_controller) StdoutLine: {'line': b'running install\n'}
+[2.748709] (ultrasonic_driver) StdoutLine: {'line': b'running build_py\n'}
+[2.751006] (ultrasonic_driver) StdoutLine: {'line': b'running install\n'}
+[2.762868] (motor_controller) StdoutLine: {'line': b'running install_lib\n'}
+[2.764521] (ultrasonic_driver) StdoutLine: {'line': b'running install_lib\n'}
+[2.789323] (motor_controller) StdoutLine: {'line': b'copying /home/roverto/rov/build/motor_controller/build/lib/motor_controller/motor_controller_node.py -> /home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[2.790354] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_controller_node.py to motor_controller_node.cpython-312.pyc\n'}
+[2.792016] (motor_controller) StdoutLine: {'line': b'running install_data\n'}
+[2.792198] (motor_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.793764] (ultrasonic_driver) StdoutLine: {'line': b'running install_data\n'}
+[2.793994] (ultrasonic_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.809512] (-) TimerEvent: {}
+[2.820640] (motor_controller) StdoutLine: {'line': b"removing '/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[2.821179] (motor_controller) StdoutLine: {'line': b'Copying ../../build/motor_controller/motor_controller.egg-info to /home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info\n'}
+[2.822933] (motor_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[2.823104] (ultrasonic_driver) StdoutLine: {'line': b"removing '/home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages/ultrasonic_driver-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[2.823464] (ultrasonic_driver) StdoutLine: {'line': b'Copying ../../build/ultrasonic_driver/ultrasonic_driver.egg-info to /home/roverto/rov/install/ultrasonic_driver/lib/python3.12/site-packages/ultrasonic_driver-0.0.0-py3.12.egg-info\n'}
+[2.824770] (ultrasonic_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[2.909635] (-) TimerEvent: {}
+[3.010066] (-) TimerEvent: {}
+[3.071447] (motor_controller) StdoutLine: {'line': b'Installing motor_controller_node script to /home/roverto/rov/install/motor_controller/lib/motor_controller\n'}
+[3.071985] (motor_controller) StdoutLine: {'line': b'Installing motors_forward script to /home/roverto/rov/install/motor_controller/lib/motor_controller\n'}
+[3.074076] (motor_controller) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/rov/build/motor_controller/install.log'\n"}
+[3.076657] (ultrasonic_driver) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/rov/build/ultrasonic_driver/install.log'\n"}
+[3.110221] (-) TimerEvent: {}
+[3.210876] (-) TimerEvent: {}
+[3.241007] (motor_controller) CommandEnded: {'returncode': 0}
+[3.275462] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[3.277017] (ultrasonic_driver) CommandEnded: {'returncode': 0}
+[3.288189] (ultrasonic_driver) JobEnded: {'identifier': 'ultrasonic_driver', 'rc': 0}
+[3.289317] (-) EventReactorShutdown: {}
