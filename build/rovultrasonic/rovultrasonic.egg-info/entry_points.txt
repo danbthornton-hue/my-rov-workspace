@@ -1,0 +1,3 @@
+[console_scripts]
+publishd1 = rovultrasonic.publishd1:main
+publishd2 = rovultrasonic.publishd2:main

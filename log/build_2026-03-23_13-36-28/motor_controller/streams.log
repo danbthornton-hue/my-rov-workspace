@@ -1,0 +1,22 @@
+[1.612s] Invoking command in '/home/roverto/rov/src/motor_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/rov/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/roverto/rov/build/motor_controller/build install --record /home/roverto/rov/build/motor_controller/install.log --single-version-externally-managed install_data
+[1.995s] running egg_info
+[2.022s] writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[2.022s] writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[2.024s] writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[2.026s] writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt
+[2.027s] writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt
+[2.086s] reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[2.087s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[2.087s] running build
+[2.087s] running build_py
+[2.087s] running install
+[2.097s] running install_lib
+[2.125s] running install_data
+[2.125s] running install_egg_info
+[2.153s] removing '/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[2.154s] Copying ../../build/motor_controller/motor_controller.egg-info to /home/roverto/rov/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info
+[2.155s] running install_scripts
+[2.351s] Installing motor_controller_node script to /home/roverto/rov/install/motor_controller/lib/motor_controller
+[2.352s] Installing motors_forward script to /home/roverto/rov/install/motor_controller/lib/motor_controller
+[2.353s] writing list of installed files to '/home/roverto/rov/build/motor_controller/install.log'
+[2.495s] Invoked command in '/home/roverto/rov/src/motor_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/rov/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/rov/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/roverto/rov/build/motor_controller/build install --record /home/roverto/rov/build/motor_controller/install.log --single-version-externally-managed install_data
