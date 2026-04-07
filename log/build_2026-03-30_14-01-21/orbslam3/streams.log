@@ -1,0 +1,40 @@
+[0.027s] Invoking command in '/home/roverto/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4
+[0.080s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.440s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.450s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.484s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.498s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.516s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.534s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.619s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.621s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.716s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.797s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.867s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.882s] -- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+[1.061s] -- Configuring done (1.0s)
+[1.103s] -- Generating done (0.0s)
+[1.118s] -- Build files have been written to: /home/roverto/ros2_ws/build/orbslam3
+[1.228s] [ 33%] [32m[1mLinking CXX executable mono[0m
+[3.819s] [100%] Built target mono
+[3.843s] Invoked command in '/home/roverto/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4
+[3.863s] Invoking command in '/home/roverto/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/roverto/ros2_ws/build/orbslam3
+[3.878s] -- Install configuration: ""
+[3.878s] -- Execute custom install script
+[3.879s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/lib/orbslam3/mono
+[3.898s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+[3.915s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+[3.935s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+[3.952s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+[3.970s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh
+[3.987s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv
+[4.005s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash
+[4.026s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh
+[4.043s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh
+[4.061s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv
+[4.078s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.dsv
+[4.096s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+[4.115s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+[4.135s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+[4.153s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.xml
+[4.175s] Invoked command in '/home/roverto/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/roverto/ros2_ws/build/orbslam3

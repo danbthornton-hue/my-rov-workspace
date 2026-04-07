@@ -1,0 +1,1 @@
+/home/roverto/ros2_ws/src/ros2_orb_slam3/scripts/mono_driver_node.py

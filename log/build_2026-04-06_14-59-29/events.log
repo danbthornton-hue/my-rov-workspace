@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000427] (-) JobUnselected: {'identifier': 'camera_ros'}
+[0.000767] (-) JobUnselected: {'identifier': 'custom_camera_publisher'}
+[0.000801] (-) JobUnselected: {'identifier': 'motor_controller'}
+[0.000821] (-) JobUnselected: {'identifier': 'orbslam3'}
+[0.000838] (-) JobUnselected: {'identifier': 'ros2_orb_slam3'}
+[0.000855] (-) JobUnselected: {'identifier': 'rovultrasonic'}
+[0.000875] (RovControl) JobQueued: {'identifier': 'RovControl', 'dependencies': OrderedDict()}
+[0.000897] (RovControl) JobStarted: {'identifier': 'RovControl'}
+[0.099454] (-) TimerEvent: {}
+[0.199856] (-) TimerEvent: {}
+[0.300417] (-) TimerEvent: {}
+[0.400802] (-) TimerEvent: {}
+[0.501366] (-) TimerEvent: {}
+[0.602175] (-) TimerEvent: {}
+[0.706030] (-) TimerEvent: {}
+[0.808492] (-) TimerEvent: {}
+[0.909043] (-) TimerEvent: {}
+[1.009852] (-) TimerEvent: {}
+[1.110249] (-) TimerEvent: {}
+[1.210850] (-) TimerEvent: {}
+[1.311295] (-) TimerEvent: {}
+[1.411661] (-) TimerEvent: {}
+[1.512083] (-) TimerEvent: {}
+[1.612470] (-) TimerEvent: {}
+[1.712787] (-) TimerEvent: {}
+[1.813172] (-) TimerEvent: {}
+[1.913602] (-) TimerEvent: {}
+[2.014027] (-) TimerEvent: {}
+[2.114374] (-) TimerEvent: {}
+[2.214675] (-) TimerEvent: {}
+[2.315030] (-) TimerEvent: {}
+[2.415415] (-) TimerEvent: {}
+[2.515789] (-) TimerEvent: {}
+[2.616124] (-) TimerEvent: {}
+[2.716434] (-) TimerEvent: {}
+[2.816888] (-) TimerEvent: {}
+[2.917763] (-) TimerEvent: {}
+[3.018302] (-) TimerEvent: {}
+[3.118790] (-) TimerEvent: {}
+[3.219208] (-) TimerEvent: {}
+[3.238231] (RovControl) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/RovControl', 'build', '--build-base', '/home/roverto/ros2_ws/build/RovControl/build', 'install', '--record', '/home/roverto/ros2_ws/build/RovControl/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/ros2_ws/src/RovControl', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'SSH_CLIENT': '192.168.1.137 52594 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-3ba1dafc-014c-4a61-a4bb-6e49176ffb15.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/roverto/image_publisher/install:/home/roverto/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/home/roverto/.local/bin:/usr/local/bin:/opt/ros/jazzy/bin:/home/roverto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/rovultrasonic:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/home/roverto/ros2_ws/install/motor_controller:/home/roverto/ros2_ws/install/RovControl:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/roverto/ros2_ws/build/RovControl', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'SSH_CONNECTION': '192.168.1.137 52594 192.168.1.128 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/ros2_ws/build/RovControl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages:/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.319433] (-) TimerEvent: {}
+[3.420074] (-) TimerEvent: {}
+[3.520667] (-) TimerEvent: {}
+[3.621150] (-) TimerEvent: {}
+[3.708366] (RovControl) StdoutLine: {'line': b'running egg_info\n'}
+[3.721264] (-) TimerEvent: {}
+[3.738732] (RovControl) StdoutLine: {'line': b'writing ../../build/RovControl/RovControl.egg-info/PKG-INFO\n'}
+[3.739071] (RovControl) StdoutLine: {'line': b'writing dependency_links to ../../build/RovControl/RovControl.egg-info/dependency_links.txt\n'}
+[3.739858] (RovControl) StdoutLine: {'line': b'writing entry points to ../../build/RovControl/RovControl.egg-info/entry_points.txt\n'}
+[3.740695] (RovControl) StdoutLine: {'line': b'writing requirements to ../../build/RovControl/RovControl.egg-info/requires.txt\n'}
+[3.741432] (RovControl) StdoutLine: {'line': b'writing top-level names to ../../build/RovControl/RovControl.egg-info/top_level.txt\n'}
+[3.802848] (RovControl) StdoutLine: {'line': b"reading manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'\n"}
+[3.804602] (RovControl) StdoutLine: {'line': b"writing manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'\n"}
+[3.804853] (RovControl) StdoutLine: {'line': b'running build\n'}
+[3.804969] (RovControl) StdoutLine: {'line': b'running build_py\n'}
+[3.805861] (RovControl) StdoutLine: {'line': b'running install\n'}
+[3.814899] (RovControl) StdoutLine: {'line': b'running install_lib\n'}
+[3.821346] (-) TimerEvent: {}
+[3.844560] (RovControl) StdoutLine: {'line': b'running install_data\n'}
+[3.845243] (RovControl) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.888166] (RovControl) StdoutLine: {'line': b"removing '/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[3.891618] (RovControl) StdoutLine: {'line': b'Copying ../../build/RovControl/RovControl.egg-info to /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl-0.0.0-py3.12.egg-info\n'}
+[3.895706] (RovControl) StdoutLine: {'line': b'running install_scripts\n'}
+[3.921504] (-) TimerEvent: {}
+[4.021950] (-) TimerEvent: {}
+[4.124476] (-) TimerEvent: {}
+[4.124811] (RovControl) StdoutLine: {'line': b'Installing rovnav script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl\n'}
+[4.125145] (RovControl) StdoutLine: {'line': b'Installing uonly script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl\n'}
+[4.126921] (RovControl) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/ros2_ws/build/RovControl/install.log'\n"}
+[4.214877] (RovControl) CommandEnded: {'returncode': 0}
+[4.224633] (-) TimerEvent: {}
+[4.251828] (RovControl) JobEnded: {'identifier': 'RovControl', 'rc': 0}
+[4.252903] (-) EventReactorShutdown: {}

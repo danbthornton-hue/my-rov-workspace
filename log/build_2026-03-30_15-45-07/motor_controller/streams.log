@@ -1,0 +1,41 @@
+[2.460s] Invoking command in '/home/roverto/ros2_ws/src/motor_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/roverto/ros2_ws/build/motor_controller/build install --record /home/roverto/ros2_ws/build/motor_controller/install.log --single-version-externally-managed install_data
+[3.080s] running egg_info
+[3.081s] creating ../../build/motor_controller/motor_controller.egg-info
+[3.129s] writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[3.129s] writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[3.130s] writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[3.130s] writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt
+[3.130s] writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt
+[3.130s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.224s] reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.226s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[3.226s] running build
+[3.226s] running build_py
+[3.226s] creating /home/roverto/ros2_ws/build/motor_controller/build
+[3.226s] creating /home/roverto/ros2_ws/build/motor_controller/build/lib
+[3.226s] creating /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller
+[3.227s] copying motor_controller/__init__.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller
+[3.227s] copying motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller
+[3.228s] copying motor_controller/motors_forward.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller
+[3.229s] running install
+[3.242s] running install_lib
+[3.273s] creating /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.274s] copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.274s] copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.274s] copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/motors_forward.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller
+[3.275s] byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/__init__.py to __init__.cpython-312.pyc
+[3.275s] byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_controller_node.py to motor_controller_node.cpython-312.pyc
+[3.277s] byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motors_forward.py to motors_forward.cpython-312.pyc
+[3.278s] running install_data
+[3.279s] creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index
+[3.279s] creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index
+[3.279s] creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index/packages
+[3.279s] copying resource/motor_controller -> /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index/packages
+[3.279s] copying package.xml -> /home/roverto/ros2_ws/install/motor_controller/share/motor_controller
+[3.279s] running install_egg_info
+[3.324s] Copying ../../build/motor_controller/motor_controller.egg-info to /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info
+[3.326s] running install_scripts
+[3.667s] Installing motor_controller_node script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller
+[3.667s] Installing motors_forward script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller
+[3.668s] writing list of installed files to '/home/roverto/ros2_ws/build/motor_controller/install.log'
+[3.822s] Invoked command in '/home/roverto/ros2_ws/src/motor_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/roverto/ros2_ws/build/motor_controller/build install --record /home/roverto/ros2_ws/build/motor_controller/install.log --single-version-externally-managed install_data

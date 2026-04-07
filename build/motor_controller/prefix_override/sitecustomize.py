@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/roverto/rov/install/motor_controller'
+    sys.prefix = sys.exec_prefix = '/home/roverto/ros2_ws/install/motor_controller'

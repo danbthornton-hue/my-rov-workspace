@@ -1,0 +1,3 @@
+[console_scripts]
+rovnav = rov_control.ROVNAV:main
+uonly = RovControl.UONLY:main

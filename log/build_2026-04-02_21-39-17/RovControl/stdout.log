@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/RovControl/RovControl.egg-info
+writing ../../build/RovControl/RovControl.egg-info/PKG-INFO
+writing dependency_links to ../../build/RovControl/RovControl.egg-info/dependency_links.txt
+writing entry points to ../../build/RovControl/RovControl.egg-info/entry_points.txt
+writing requirements to ../../build/RovControl/RovControl.egg-info/requires.txt
+writing top-level names to ../../build/RovControl/RovControl.egg-info/top_level.txt
+writing manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'
+reading manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'
+writing manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/roverto/ros2_ws/build/RovControl/build
+creating /home/roverto/ros2_ws/build/RovControl/build/lib
+creating /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl
+copying RovControl/__init__.py -> /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl
+copying RovControl/ROVNAV.py -> /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl
+copying RovControl/UONLY.py -> /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl
+running install
+running install_lib
+creating /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl
+copying /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl/__init__.py -> /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl
+copying /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl/ROVNAV.py -> /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl
+copying /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl/UONLY.py -> /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl
+byte-compiling /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl/ROVNAV.py to ROVNAV.cpython-312.pyc
+byte-compiling /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl/UONLY.py to UONLY.cpython-312.pyc
+running install_data
+creating /home/roverto/ros2_ws/install/RovControl/share/ament_index
+creating /home/roverto/ros2_ws/install/RovControl/share/ament_index/resource_index
+creating /home/roverto/ros2_ws/install/RovControl/share/ament_index/resource_index/packages
+copying resource/RovControl -> /home/roverto/ros2_ws/install/RovControl/share/ament_index/resource_index/packages
+copying package.xml -> /home/roverto/ros2_ws/install/RovControl/share/RovControl
+running install_egg_info
+Copying ../../build/RovControl/RovControl.egg-info to /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl-0.0.0-py3.12.egg-info
+running install_scripts
+Installing rovnav script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl
+Installing uonly script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl
+writing list of installed files to '/home/roverto/ros2_ws/build/RovControl/install.log'

@@ -1,0 +1,11 @@
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/uninstall.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/ros2_orb_slam3_uninstall.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/orb_slam3_lib.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/mono_node_cpp.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/test.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/edit_cache.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/rebuild_cache.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/list_install_components.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/install.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/install/local.dir
+/home/roverto/ros2_ws/build/ros2_orb_slam3/CMakeFiles/install/strip.dir

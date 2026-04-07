@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000316] (-) JobUnselected: {'identifier': 'camera_ros'}
+[0.000540] (-) JobUnselected: {'identifier': 'custom_camera_publisher'}
+[0.000568] (-) JobUnselected: {'identifier': 'motor_controller'}
+[0.000590] (-) JobUnselected: {'identifier': 'orbslam3'}
+[0.000611] (-) JobUnselected: {'identifier': 'ros2_orb_slam3'}
+[0.000655] (rovultrasonic) JobQueued: {'identifier': 'rovultrasonic', 'dependencies': OrderedDict()}
+[0.002015] (rovultrasonic) JobStarted: {'identifier': 'rovultrasonic'}
+[0.099645] (-) TimerEvent: {}
+[0.200000] (-) TimerEvent: {}
+[0.300309] (-) TimerEvent: {}
+[0.400652] (-) TimerEvent: {}
+[0.501200] (-) TimerEvent: {}
+[0.603757] (-) TimerEvent: {}
+[0.704117] (-) TimerEvent: {}
+[0.804418] (-) TimerEvent: {}
+[0.904749] (-) TimerEvent: {}
+[1.005086] (-) TimerEvent: {}
+[1.105397] (-) TimerEvent: {}
+[1.205771] (-) TimerEvent: {}
+[1.306186] (-) TimerEvent: {}
+[1.406486] (-) TimerEvent: {}
+[1.506804] (-) TimerEvent: {}
+[1.607152] (-) TimerEvent: {}
+[1.707588] (-) TimerEvent: {}
+[1.730558] (rovultrasonic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rovultrasonic', 'build', '--build-base', '/home/roverto/ros2_ws/build/rovultrasonic/build', 'install', '--record', '/home/roverto/ros2_ws/build/rovultrasonic/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/ros2_ws/src/rovultrasonic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1739', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/roverto/ros2_ws/install:/home/roverto/image_publisher/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'roverto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/bin:/opt/ros/jazzy/bin:/home/roverto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/clanker:@/tmp/.ICE-unix/1704,unix/clanker:/tmp/.ICE-unix/1704', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7c170c03_7ad6_4ef1_8d94_604276769e0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.O6CXM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/roverto/ros2_ws/build/rovultrasonic', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/ros2_ws/build/rovultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.807670] (-) TimerEvent: {}
+[1.907982] (-) TimerEvent: {}
+[2.008292] (-) TimerEvent: {}
+[2.108586] (-) TimerEvent: {}
+[2.117797] (rovultrasonic) StdoutLine: {'line': b'running egg_info\n'}
+[2.118341] (rovultrasonic) StdoutLine: {'line': b'creating ../../build/rovultrasonic/rovultrasonic.egg-info\n'}
+[2.144930] (rovultrasonic) StdoutLine: {'line': b'writing ../../build/rovultrasonic/rovultrasonic.egg-info/PKG-INFO\n'}
+[2.145344] (rovultrasonic) StdoutLine: {'line': b'writing dependency_links to ../../build/rovultrasonic/rovultrasonic.egg-info/dependency_links.txt\n'}
+[2.145579] (rovultrasonic) StdoutLine: {'line': b'writing entry points to ../../build/rovultrasonic/rovultrasonic.egg-info/entry_points.txt\n'}
+[2.145763] (rovultrasonic) StdoutLine: {'line': b'writing requirements to ../../build/rovultrasonic/rovultrasonic.egg-info/requires.txt\n'}
+[2.145881] (rovultrasonic) StdoutLine: {'line': b'writing top-level names to ../../build/rovultrasonic/rovultrasonic.egg-info/top_level.txt\n'}
+[2.146051] (rovultrasonic) StdoutLine: {'line': b"writing manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'\n"}
+[2.200571] (rovultrasonic) StdoutLine: {'line': b"reading manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'\n"}
+[2.201478] (rovultrasonic) StdoutLine: {'line': b"writing manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'\n"}
+[2.201713] (rovultrasonic) StdoutLine: {'line': b'running build\n'}
+[2.201839] (rovultrasonic) StdoutLine: {'line': b'running build_py\n'}
+[2.202004] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/rovultrasonic/build\n'}
+[2.202114] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/rovultrasonic/build/lib\n'}
+[2.202217] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic\n'}
+[2.202311] (rovultrasonic) StdoutLine: {'line': b'copying rovultrasonic/__init__.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic\n'}
+[2.202477] (rovultrasonic) StdoutLine: {'line': b'copying rovultrasonic/publishd1.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic\n'}
+[2.204245] (rovultrasonic) StdoutLine: {'line': b'copying rovultrasonic/publishd2.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic\n'}
+[2.204848] (rovultrasonic) StdoutLine: {'line': b'running install\n'}
+[2.208641] (-) TimerEvent: {}
+[2.216694] (rovultrasonic) StdoutLine: {'line': b'running install_lib\n'}
+[2.244278] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic\n'}
+[2.244475] (rovultrasonic) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/__init__.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic\n'}
+[2.244595] (rovultrasonic) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/publishd1.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic\n'}
+[2.244790] (rovultrasonic) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/publishd2.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic\n'}
+[2.245593] (rovultrasonic) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/__init__.py to __init__.cpython-312.pyc\n'}
+[2.245969] (rovultrasonic) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/publishd1.py to publishd1.cpython-312.pyc\n'}
+[2.246911] (rovultrasonic) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/publishd2.py to publishd2.cpython-312.pyc\n'}
+[2.247683] (rovultrasonic) StdoutLine: {'line': b'running install_data\n'}
+[2.247824] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index\n'}
+[2.247926] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index\n'}
+[2.248031] (rovultrasonic) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index/packages\n'}
+[2.248132] (rovultrasonic) StdoutLine: {'line': b'copying resource/rovultrasonic -> /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index/packages\n'}
+[2.248261] (rovultrasonic) StdoutLine: {'line': b'copying package.xml -> /home/roverto/ros2_ws/install/rovultrasonic/share/rovultrasonic\n'}
+[2.248391] (rovultrasonic) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.277435] (rovultrasonic) StdoutLine: {'line': b'Copying ../../build/rovultrasonic/rovultrasonic.egg-info to /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic-0.0.0-py3.12.egg-info\n'}
+[2.278687] (rovultrasonic) StdoutLine: {'line': b'running install_scripts\n'}
+[2.308779] (-) TimerEvent: {}
+[2.409112] (-) TimerEvent: {}
+[2.475915] (rovultrasonic) StdoutLine: {'line': b'Installing publishd1 script to /home/roverto/ros2_ws/install/rovultrasonic/lib/rovultrasonic\n'}
+[2.476218] (rovultrasonic) StdoutLine: {'line': b'Installing publishd2 script to /home/roverto/ros2_ws/install/rovultrasonic/lib/rovultrasonic\n'}
+[2.476679] (rovultrasonic) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/ros2_ws/build/rovultrasonic/install.log'\n"}
+[2.509260] (-) TimerEvent: {}
+[2.575846] (rovultrasonic) CommandEnded: {'returncode': 0}
+[2.597561] (rovultrasonic) JobEnded: {'identifier': 'rovultrasonic', 'rc': 0}
+[2.598871] (-) EventReactorShutdown: {}

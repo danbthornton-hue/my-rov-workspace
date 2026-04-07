@@ -1,0 +1,16 @@
+/home/roverto/ros2_ws/install/orbslam3/lib/orbslam3/mono
+/home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+/home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.dsv
+/home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+/home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.xml

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/roverto/ros2_ws/build/ros2_orb_slam3/mono_node_cpp" "/home/roverto/ros2_ws/build/ros2_orb_slam3/liborb_slam3_lib.so" "TARGETS" "mono_node_cpp" "orb_slam3_lib" "DESTINATION" "lib/ros2_orb_slam3")

@@ -1,0 +1,41 @@
+[1.729s] Invoking command in '/home/roverto/ros2_ws/src/rovultrasonic': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/rovultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rovultrasonic build --build-base /home/roverto/ros2_ws/build/rovultrasonic/build install --record /home/roverto/ros2_ws/build/rovultrasonic/install.log --single-version-externally-managed install_data
+[2.116s] running egg_info
+[2.116s] creating ../../build/rovultrasonic/rovultrasonic.egg-info
+[2.143s] writing ../../build/rovultrasonic/rovultrasonic.egg-info/PKG-INFO
+[2.143s] writing dependency_links to ../../build/rovultrasonic/rovultrasonic.egg-info/dependency_links.txt
+[2.144s] writing entry points to ../../build/rovultrasonic/rovultrasonic.egg-info/entry_points.txt
+[2.144s] writing requirements to ../../build/rovultrasonic/rovultrasonic.egg-info/requires.txt
+[2.144s] writing top-level names to ../../build/rovultrasonic/rovultrasonic.egg-info/top_level.txt
+[2.144s] writing manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'
+[2.199s] reading manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'
+[2.199s] writing manifest file '../../build/rovultrasonic/rovultrasonic.egg-info/SOURCES.txt'
+[2.200s] running build
+[2.200s] running build_py
+[2.200s] creating /home/roverto/ros2_ws/build/rovultrasonic/build
+[2.200s] creating /home/roverto/ros2_ws/build/rovultrasonic/build/lib
+[2.200s] creating /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic
+[2.200s] copying rovultrasonic/__init__.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic
+[2.200s] copying rovultrasonic/publishd1.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic
+[2.202s] copying rovultrasonic/publishd2.py -> /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic
+[2.203s] running install
+[2.215s] running install_lib
+[2.242s] creating /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic
+[2.242s] copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/__init__.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic
+[2.243s] copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/publishd1.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic
+[2.243s] copying /home/roverto/ros2_ws/build/rovultrasonic/build/lib/rovultrasonic/publishd2.py -> /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic
+[2.244s] byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/__init__.py to __init__.cpython-312.pyc
+[2.244s] byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/publishd1.py to publishd1.cpython-312.pyc
+[2.245s] byte-compiling /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic/publishd2.py to publishd2.cpython-312.pyc
+[2.246s] running install_data
+[2.246s] creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index
+[2.246s] creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index
+[2.246s] creating /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index/packages
+[2.246s] copying resource/rovultrasonic -> /home/roverto/ros2_ws/install/rovultrasonic/share/ament_index/resource_index/packages
+[2.246s] copying package.xml -> /home/roverto/ros2_ws/install/rovultrasonic/share/rovultrasonic
+[2.246s] running install_egg_info
+[2.275s] Copying ../../build/rovultrasonic/rovultrasonic.egg-info to /home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages/rovultrasonic-0.0.0-py3.12.egg-info
+[2.277s] running install_scripts
+[2.474s] Installing publishd1 script to /home/roverto/ros2_ws/install/rovultrasonic/lib/rovultrasonic
+[2.474s] Installing publishd2 script to /home/roverto/ros2_ws/install/rovultrasonic/lib/rovultrasonic
+[2.475s] writing list of installed files to '/home/roverto/ros2_ws/build/rovultrasonic/install.log'
+[2.574s] Invoked command in '/home/roverto/ros2_ws/src/rovultrasonic' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/rovultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rovultrasonic build --build-base /home/roverto/ros2_ws/build/rovultrasonic/build install --record /home/roverto/ros2_ws/build/rovultrasonic/install.log --single-version-externally-managed install_data

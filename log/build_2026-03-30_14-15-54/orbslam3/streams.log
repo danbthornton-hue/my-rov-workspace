@@ -1,0 +1,35 @@
+[0.028s] Invoking command in '/home/roverto/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4
+[0.077s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.433s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.445s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.480s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.494s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.513s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.533s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.624s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.626s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.739s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.833s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.916s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.933s] -- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+[1.166s] -- Configuring done (1.1s)
+[1.215s] -- Generating done (0.0s)
+[1.231s] -- Build files have been written to: /home/roverto/ros2_ws/build/orbslam3
+[1.368s] [ 66%] [32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/mono.cpp.o[0m
+[1.368s] [ 66%] [32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o[0m
+[1.835s] In file included from [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/mono.cpp:7[m[K:
+[1.835s] [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[1.835s]     8 | #include [01;31m[K"cv_bridge/cv_bridge.h"[m[K
+[1.835s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.835s] In file included from [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.cpp:1[m[K:
+[1.835s] [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[1.835s]     8 | #include [01;31m[K"cv_bridge/cv_bridge.h"[m[K
+[1.836s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.836s] compilation terminated.
+[1.836s] compilation terminated.
+[1.844s] gmake[2]: *** [CMakeFiles/mono.dir/build.make:76: CMakeFiles/mono.dir/src/monocular/mono.cpp.o] Error 1
+[1.844s] gmake[2]: *** Waiting for unfinished jobs....
+[1.845s] gmake[2]: *** [CMakeFiles/mono.dir/build.make:90: CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o] Error 1
+[1.845s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mono.dir/all] Error 2
+[1.846s] gmake: *** [Makefile:146: all] Error 2
+[1.854s] Invoked command in '/home/roverto/ros2_ws/build/orbslam3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4

@@ -1,0 +1,36 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/roverto/ros2_ws/build/orbslam3
+[ 33%] [32m[1mLinking CXX executable mono[0m
+[100%] Built target mono
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/lib/orbslam3/mono
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.dsv
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.xml

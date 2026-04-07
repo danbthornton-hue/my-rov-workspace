@@ -1,0 +1,6 @@
+source;share/RovControl/hook/pythonpath.ps1
+source;share/RovControl/hook/pythonpath.dsv
+source;share/RovControl/hook/pythonpath.sh
+source;share/RovControl/hook/ament_prefix_path.ps1
+source;share/RovControl/hook/ament_prefix_path.dsv
+source;share/RovControl/hook/ament_prefix_path.sh

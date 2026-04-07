@@ -1,0 +1,171 @@
+[0.021s] Invoking command in '/home/roverto/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4
+[0.169s] [ 33%] [32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o[0m
+[9.193s] In file included from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.193s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26[m[K,
+[9.193s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/FrameDrawer.h:24[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Viewer.h:23[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:26[m[K,
+[9.194s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/System.h:31[m[K,
+[9.195s]                  from [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.hpp:10[m[K,
+[9.195s]                  from [01m[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.cpp:1[m[K:
+[9.195s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.195s]    62 | igen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.195s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[9.195s] 
+[9.195s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.196s]                  from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+[9.196s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+[9.196s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+[9.196s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+[9.196s]                  from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28[m[K:
+[9.196s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.196s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.196s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.232s] In file included from [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K:
+[9.233s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.233s]    59 | Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.233s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[9.233s] 
+[9.233s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.233s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.233s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.233s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.233s]    60 | Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.233s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[9.233s] 
+[9.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.234s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.234s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.950s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[9.950s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[9.950s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.950s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.950s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.951s] 
+[9.951s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.951s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.951s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.992s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[9.992s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[9.992s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.992s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.992s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.992s] 
+[9.992s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.993s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.993s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.036s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[10.036s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[10.036s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.036s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.036s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.036s] 
+[10.036s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.036s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.036s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.037s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.037s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.037s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.037s] 
+[10.037s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.037s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.037s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.173s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[10.174s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[10.174s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.174s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.174s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.174s] 
+[10.175s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.175s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.175s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.216s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.217s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.217s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.217s] 
+[10.217s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.217s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.217s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.432s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[10.432s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[10.432s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.432s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.433s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.433s] 
+[10.433s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.433s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.433s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.433s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.434s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.434s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.434s] 
+[10.434s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.434s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.434s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.013s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[11.013s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[11.013s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.013s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[11.013s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[11.013s] 
+[11.013s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.013s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.013s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.101s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[11.101s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[11.101s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.102s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[11.102s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[11.102s] 
+[11.102s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.102s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.102s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.103s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.103s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[11.103s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[11.103s] 
+[11.103s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.103s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.103s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.208s] /home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[11.208s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[11.208s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.208s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[11.208s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[11.208s] 
+[11.208s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.208s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.209s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[11.234s] [01m[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[11.234s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[11.234s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[11.234s] 
+[11.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.234s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[11.234s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[42.454s] [ 66%] [32m[1mLinking CXX executable mono[0m
+[45.766s] [100%] Built target mono
+[45.792s] Invoked command in '/home/roverto/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/roverto/ros2_ws/build/orbslam3 -- -j4 -l4
+[45.813s] Invoking command in '/home/roverto/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/roverto/ros2_ws/build/orbslam3
+[45.829s] -- Install configuration: ""
+[45.829s] -- Execute custom install script
+[45.830s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/lib/orbslam3/mono
+[45.830s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+[45.830s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+[45.830s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+[45.831s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+[45.831s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh
+[45.831s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv
+[45.831s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash
+[45.832s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh
+[45.832s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh
+[45.832s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv
+[45.832s] -- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.dsv
+[45.853s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+[45.853s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+[45.853s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+[45.855s] -- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.xml
+[45.860s] Invoked command in '/home/roverto/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/roverto/ros2_ws/build/orbslam3

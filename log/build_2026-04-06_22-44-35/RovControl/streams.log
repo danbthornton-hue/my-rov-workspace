@@ -1,0 +1,25 @@
+[1.702s] Invoking command in '/home/roverto/ros2_ws/src/RovControl': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/RovControl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RovControl build --build-base /home/roverto/ros2_ws/build/RovControl/build install --record /home/roverto/ros2_ws/build/RovControl/install.log --single-version-externally-managed install_data
+[2.084s] running egg_info
+[2.112s] writing ../../build/RovControl/RovControl.egg-info/PKG-INFO
+[2.112s] writing dependency_links to ../../build/RovControl/RovControl.egg-info/dependency_links.txt
+[2.113s] writing entry points to ../../build/RovControl/RovControl.egg-info/entry_points.txt
+[2.114s] writing requirements to ../../build/RovControl/RovControl.egg-info/requires.txt
+[2.115s] writing top-level names to ../../build/RovControl/RovControl.egg-info/top_level.txt
+[2.172s] reading manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'
+[2.174s] writing manifest file '../../build/RovControl/RovControl.egg-info/SOURCES.txt'
+[2.175s] running build
+[2.175s] running build_py
+[2.175s] copying RovControl/UONLY.py -> /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl
+[2.176s] running install
+[2.186s] running install_lib
+[2.214s] copying /home/roverto/ros2_ws/build/RovControl/build/lib/RovControl/UONLY.py -> /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl
+[2.215s] byte-compiling /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl/UONLY.py to UONLY.cpython-312.pyc
+[2.217s] running install_data
+[2.217s] running install_egg_info
+[2.247s] removing '/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl-0.0.0-py3.12.egg-info' (and everything under it)
+[2.248s] Copying ../../build/RovControl/RovControl.egg-info to /home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages/RovControl-0.0.0-py3.12.egg-info
+[2.250s] running install_scripts
+[2.441s] Installing rovnav script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl
+[2.442s] Installing uonly script to /home/roverto/ros2_ws/install/RovControl/lib/RovControl
+[2.444s] writing list of installed files to '/home/roverto/ros2_ws/build/RovControl/install.log'
+[2.539s] Invoked command in '/home/roverto/ros2_ws/src/RovControl' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/roverto/ros2_ws/build/RovControl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RovControl build --build-base /home/roverto/ros2_ws/build/RovControl/build install --record /home/roverto/ros2_ws/build/RovControl/install.log --single-version-externally-managed install_data

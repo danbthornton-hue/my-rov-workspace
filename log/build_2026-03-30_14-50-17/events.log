@@ -1,0 +1,640 @@
+[0.000000] (-) TimerEvent: {}
+[0.000362] (-) JobUnselected: {'identifier': 'camera_ros'}
+[0.000405] (-) JobUnselected: {'identifier': 'custom_camera_publisher'}
+[0.000429] (-) JobUnselected: {'identifier': 'motor_controller'}
+[0.000449] (-) JobUnselected: {'identifier': 'ros2_orb_slam3'}
+[0.000468] (-) JobUnselected: {'identifier': 'rovultrasonic'}
+[0.000489] (orbslam3) JobQueued: {'identifier': 'orbslam3', 'dependencies': OrderedDict()}
+[0.001097] (orbslam3) JobStarted: {'identifier': 'orbslam3'}
+[0.017343] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'cmake'}
+[0.018951] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'build'}
+[0.019726] (orbslam3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roverto/ros2_ws/build/orbslam3', '--', '-j4', '-l4'], 'cwd': '/home/roverto/ros2_ws/build/orbslam3', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/roverto/image_publisher/install:/home/roverto/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'roverto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/bin:/opt/ros/jazzy/bin:/home/roverto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/clanker:@/tmp/.ICE-unix/1685,unix/clanker:/tmp/.ICE-unix/1685', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4380be03_21c1_4f64_b269_e4b1203998af', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.EGCPM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.160', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/roverto/ros2_ws/build/orbslam3', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy'}), 'shell': False}
+[0.100066] (-) TimerEvent: {}
+[0.170377] (orbslam3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o\x1b[0m\n'}
+[0.200177] (-) TimerEvent: {}
+[0.300511] (-) TimerEvent: {}
+[0.400871] (-) TimerEvent: {}
+[0.501272] (-) TimerEvent: {}
+[0.601774] (-) TimerEvent: {}
+[0.702114] (-) TimerEvent: {}
+[0.802501] (-) TimerEvent: {}
+[0.902937] (-) TimerEvent: {}
+[1.003294] (-) TimerEvent: {}
+[1.103649] (-) TimerEvent: {}
+[1.204051] (-) TimerEvent: {}
+[1.304445] (-) TimerEvent: {}
+[1.404799] (-) TimerEvent: {}
+[1.505163] (-) TimerEvent: {}
+[1.605536] (-) TimerEvent: {}
+[1.705888] (-) TimerEvent: {}
+[1.806203] (-) TimerEvent: {}
+[1.906568] (-) TimerEvent: {}
+[2.007091] (-) TimerEvent: {}
+[2.107995] (-) TimerEvent: {}
+[2.208365] (-) TimerEvent: {}
+[2.308726] (-) TimerEvent: {}
+[2.409076] (-) TimerEvent: {}
+[2.509424] (-) TimerEvent: {}
+[2.609769] (-) TimerEvent: {}
+[2.710124] (-) TimerEvent: {}
+[2.810479] (-) TimerEvent: {}
+[2.910869] (-) TimerEvent: {}
+[3.011235] (-) TimerEvent: {}
+[3.111588] (-) TimerEvent: {}
+[3.211956] (-) TimerEvent: {}
+[3.312310] (-) TimerEvent: {}
+[3.412697] (-) TimerEvent: {}
+[3.513054] (-) TimerEvent: {}
+[3.613400] (-) TimerEvent: {}
+[3.713758] (-) TimerEvent: {}
+[3.814175] (-) TimerEvent: {}
+[3.914543] (-) TimerEvent: {}
+[4.014906] (-) TimerEvent: {}
+[4.115258] (-) TimerEvent: {}
+[4.215614] (-) TimerEvent: {}
+[4.315980] (-) TimerEvent: {}
+[4.416341] (-) TimerEvent: {}
+[4.516713] (-) TimerEvent: {}
+[4.617064] (-) TimerEvent: {}
+[4.717425] (-) TimerEvent: {}
+[4.817795] (-) TimerEvent: {}
+[4.918179] (-) TimerEvent: {}
+[5.018600] (-) TimerEvent: {}
+[5.119023] (-) TimerEvent: {}
+[5.219518] (-) TimerEvent: {}
+[5.319896] (-) TimerEvent: {}
+[5.420261] (-) TimerEvent: {}
+[5.520624] (-) TimerEvent: {}
+[5.620986] (-) TimerEvent: {}
+[5.721327] (-) TimerEvent: {}
+[5.821690] (-) TimerEvent: {}
+[5.922038] (-) TimerEvent: {}
+[6.022391] (-) TimerEvent: {}
+[6.122759] (-) TimerEvent: {}
+[6.223111] (-) TimerEvent: {}
+[6.323472] (-) TimerEvent: {}
+[6.423870] (-) TimerEvent: {}
+[6.524244] (-) TimerEvent: {}
+[6.624612] (-) TimerEvent: {}
+[6.725073] (-) TimerEvent: {}
+[6.826834] (-) TimerEvent: {}
+[6.928404] (-) TimerEvent: {}
+[7.029052] (-) TimerEvent: {}
+[7.129418] (-) TimerEvent: {}
+[7.230403] (-) TimerEvent: {}
+[7.331007] (-) TimerEvent: {}
+[7.431744] (-) TimerEvent: {}
+[7.532409] (-) TimerEvent: {}
+[7.632990] (-) TimerEvent: {}
+[7.733371] (-) TimerEvent: {}
+[7.833745] (-) TimerEvent: {}
+[7.934107] (-) TimerEvent: {}
+[8.034480] (-) TimerEvent: {}
+[8.134875] (-) TimerEvent: {}
+[8.235314] (-) TimerEvent: {}
+[8.336050] (-) TimerEvent: {}
+[8.439275] (-) TimerEvent: {}
+[8.539880] (-) TimerEvent: {}
+[8.640574] (-) TimerEvent: {}
+[8.740998] (-) TimerEvent: {}
+[8.841377] (-) TimerEvent: {}
+[8.941761] (-) TimerEvent: {}
+[9.042131] (-) TimerEvent: {}
+[9.142483] (-) TimerEvent: {}
+[9.194747] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[9.195127] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[9.195360] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33\x1b[m\x1b[K,\n'}
+[9.195478] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[9.195567] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[9.195654] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[9.195775] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[9.195964] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[9.196283] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/System.h:31\x1b[m\x1b[K,\n'}
+[9.196476] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.hpp:10\x1b[m\x1b[K,\n'}
+[9.196596] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ORB_SLAM3_ROS2/src/monocular/monocular-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[9.196755] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.196897] (orbslam3) StderrLine: {'line': b'   62 | igen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[9.197025] (orbslam3) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.197161] (orbslam3) StderrLine: {'line': b'\n'}
+[9.197292] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[9.197439] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/LU:11\x1b[m\x1b[K,\n'}
+[9.197574] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12\x1b[m\x1b[K,\n'}
+[9.197717] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7\x1b[m\x1b[K,\n'}
+[9.197871] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7\x1b[m\x1b[K,\n'}
+[9.197971] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28\x1b[m\x1b[K:\n'}
+[9.198068] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.198161] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[9.198250] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.234099] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K:\n'}
+[9.234422] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.234542] (orbslam3) StderrLine: {'line': b'   59 | Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[9.234636] (orbslam3) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.234749] (orbslam3) StderrLine: {'line': b'\n'}
+[9.234839] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.234950] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[9.235040] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.235124] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.235235] (orbslam3) StderrLine: {'line': b'   60 | Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[9.235327] (orbslam3) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.235407] (orbslam3) StderrLine: {'line': b'\n'}
+[9.235486] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.235565] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[9.235643] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.242612] (-) TimerEvent: {}
+[9.343067] (-) TimerEvent: {}
+[9.443612] (-) TimerEvent: {}
+[9.544192] (-) TimerEvent: {}
+[9.644576] (-) TimerEvent: {}
+[9.745042] (-) TimerEvent: {}
+[9.845520] (-) TimerEvent: {}
+[9.945907] (-) TimerEvent: {}
+[9.951257] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.951905] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[9.952133] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.952253] (orbslam3) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[9.952347] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.952433] (orbslam3) StderrLine: {'line': b'\n'}
+[9.952515] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.952596] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[9.952702] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.993630] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.993906] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[9.994013] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.994105] (orbslam3) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[9.994189] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.994272] (orbslam3) StderrLine: {'line': b'\n'}
+[9.994353] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.994435] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[9.994516] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.037360] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.037673] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:\x1b[m\x1b[K   required from here\n'}
+[10.037796] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.037937] (orbslam3) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[10.038024] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.038107] (orbslam3) StderrLine: {'line': b'\n'}
+[10.038187] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.038267] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.038348] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.038441] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.038535] (orbslam3) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[10.038616] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.038715] (orbslam3) StderrLine: {'line': b'\n'}
+[10.038801] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.038880] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.038958] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.045977] (-) TimerEvent: {}
+[10.146277] (-) TimerEvent: {}
+[10.175112] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.175516] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:\x1b[m\x1b[K   required from here\n'}
+[10.175747] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.175955] (orbslam3) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[10.176139] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.176308] (orbslam3) StderrLine: {'line': b'\n'}
+[10.176511] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.176687] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.176894] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.217847] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.218394] (orbslam3) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[10.218594] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.218845] (orbslam3) StderrLine: {'line': b'\n'}
+[10.219017] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.219167] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.219321] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.247542] (-) TimerEvent: {}
+[10.353432] (-) TimerEvent: {}
+[10.433309] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.433840] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:\x1b[m\x1b[K   required from here\n'}
+[10.434053] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.434232] (orbslam3) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[10.434352] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.434548] (orbslam3) StderrLine: {'line': b'\n'}
+[10.434739] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.435073] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.435238] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.435352] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.435498] (orbslam3) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[10.435637] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.435792] (orbslam3) StderrLine: {'line': b'\n'}
+[10.435889] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[10.435973] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[10.436054] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.453662] (-) TimerEvent: {}
+[10.554182] (-) TimerEvent: {}
+[10.654774] (-) TimerEvent: {}
+[10.755402] (-) TimerEvent: {}
+[10.856037] (-) TimerEvent: {}
+[10.956497] (-) TimerEvent: {}
+[11.014280] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.014645] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[11.014815] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.014935] (orbslam3) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[11.015040] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.015130] (orbslam3) StderrLine: {'line': b'\n'}
+[11.015218] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.015310] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.015405] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.056699] (-) TimerEvent: {}
+[11.102211] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.102745] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[11.102918] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.103582] (orbslam3) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[11.103886] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.104014] (orbslam3) StderrLine: {'line': b'\n'}
+[11.104116] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.104219] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.104316] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.104413] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.104596] (orbslam3) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[11.104797] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.104916] (orbslam3) StderrLine: {'line': b'\n'}
+[11.105016] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.105139] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.105305] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.156763] (-) TimerEvent: {}
+[11.209250] (orbslam3) StderrLine: {'line': b'/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.209600] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[11.209774] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.209917] (orbslam3) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[11.210040] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.210162] (orbslam3) StderrLine: {'line': b'\n'}
+[11.210278] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.210394] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.210509] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.235444] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roverto/ros2_ws/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.235715] (orbslam3) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[11.235824] (orbslam3) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.235907] (orbslam3) StderrLine: {'line': b'\n'}
+[11.235987] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.236067] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[11.236146] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.256863] (-) TimerEvent: {}
+[11.357218] (-) TimerEvent: {}
+[11.457723] (-) TimerEvent: {}
+[11.558355] (-) TimerEvent: {}
+[11.658960] (-) TimerEvent: {}
+[11.759396] (-) TimerEvent: {}
+[11.859752] (-) TimerEvent: {}
+[11.960107] (-) TimerEvent: {}
+[12.060459] (-) TimerEvent: {}
+[12.160845] (-) TimerEvent: {}
+[12.261220] (-) TimerEvent: {}
+[12.361634] (-) TimerEvent: {}
+[12.461999] (-) TimerEvent: {}
+[12.562369] (-) TimerEvent: {}
+[12.662765] (-) TimerEvent: {}
+[12.763160] (-) TimerEvent: {}
+[12.863516] (-) TimerEvent: {}
+[12.963886] (-) TimerEvent: {}
+[13.064254] (-) TimerEvent: {}
+[13.164607] (-) TimerEvent: {}
+[13.264971] (-) TimerEvent: {}
+[13.365495] (-) TimerEvent: {}
+[13.465929] (-) TimerEvent: {}
+[13.566441] (-) TimerEvent: {}
+[13.667145] (-) TimerEvent: {}
+[13.767563] (-) TimerEvent: {}
+[13.867941] (-) TimerEvent: {}
+[13.968295] (-) TimerEvent: {}
+[14.068659] (-) TimerEvent: {}
+[14.169084] (-) TimerEvent: {}
+[14.269455] (-) TimerEvent: {}
+[14.369825] (-) TimerEvent: {}
+[14.470185] (-) TimerEvent: {}
+[14.570545] (-) TimerEvent: {}
+[14.670917] (-) TimerEvent: {}
+[14.771255] (-) TimerEvent: {}
+[14.871597] (-) TimerEvent: {}
+[14.971984] (-) TimerEvent: {}
+[15.072337] (-) TimerEvent: {}
+[15.172696] (-) TimerEvent: {}
+[15.273047] (-) TimerEvent: {}
+[15.373389] (-) TimerEvent: {}
+[15.473769] (-) TimerEvent: {}
+[15.574143] (-) TimerEvent: {}
+[15.674562] (-) TimerEvent: {}
+[15.774940] (-) TimerEvent: {}
+[15.875296] (-) TimerEvent: {}
+[15.975657] (-) TimerEvent: {}
+[16.076032] (-) TimerEvent: {}
+[16.176397] (-) TimerEvent: {}
+[16.276770] (-) TimerEvent: {}
+[16.377137] (-) TimerEvent: {}
+[16.477521] (-) TimerEvent: {}
+[16.577937] (-) TimerEvent: {}
+[16.678285] (-) TimerEvent: {}
+[16.778643] (-) TimerEvent: {}
+[16.879036] (-) TimerEvent: {}
+[16.979436] (-) TimerEvent: {}
+[17.079790] (-) TimerEvent: {}
+[17.180155] (-) TimerEvent: {}
+[17.280547] (-) TimerEvent: {}
+[17.380925] (-) TimerEvent: {}
+[17.481296] (-) TimerEvent: {}
+[17.581702] (-) TimerEvent: {}
+[17.682049] (-) TimerEvent: {}
+[17.782399] (-) TimerEvent: {}
+[17.882748] (-) TimerEvent: {}
+[17.983102] (-) TimerEvent: {}
+[18.083454] (-) TimerEvent: {}
+[18.183823] (-) TimerEvent: {}
+[18.284198] (-) TimerEvent: {}
+[18.384591] (-) TimerEvent: {}
+[18.484942] (-) TimerEvent: {}
+[18.585279] (-) TimerEvent: {}
+[18.685637] (-) TimerEvent: {}
+[18.785997] (-) TimerEvent: {}
+[18.886367] (-) TimerEvent: {}
+[18.986764] (-) TimerEvent: {}
+[19.087148] (-) TimerEvent: {}
+[19.187505] (-) TimerEvent: {}
+[19.287868] (-) TimerEvent: {}
+[19.388212] (-) TimerEvent: {}
+[19.488555] (-) TimerEvent: {}
+[19.588924] (-) TimerEvent: {}
+[19.689316] (-) TimerEvent: {}
+[19.789660] (-) TimerEvent: {}
+[19.890027] (-) TimerEvent: {}
+[19.990392] (-) TimerEvent: {}
+[20.090845] (-) TimerEvent: {}
+[20.191196] (-) TimerEvent: {}
+[20.291593] (-) TimerEvent: {}
+[20.391954] (-) TimerEvent: {}
+[20.492305] (-) TimerEvent: {}
+[20.592694] (-) TimerEvent: {}
+[20.693055] (-) TimerEvent: {}
+[20.793405] (-) TimerEvent: {}
+[20.893759] (-) TimerEvent: {}
+[20.994116] (-) TimerEvent: {}
+[21.094466] (-) TimerEvent: {}
+[21.194843] (-) TimerEvent: {}
+[21.295191] (-) TimerEvent: {}
+[21.395544] (-) TimerEvent: {}
+[21.495926] (-) TimerEvent: {}
+[21.596283] (-) TimerEvent: {}
+[21.696651] (-) TimerEvent: {}
+[21.797089] (-) TimerEvent: {}
+[21.897443] (-) TimerEvent: {}
+[21.997795] (-) TimerEvent: {}
+[22.098148] (-) TimerEvent: {}
+[22.198524] (-) TimerEvent: {}
+[22.302897] (-) TimerEvent: {}
+[22.403505] (-) TimerEvent: {}
+[22.504882] (-) TimerEvent: {}
+[22.605357] (-) TimerEvent: {}
+[22.706149] (-) TimerEvent: {}
+[22.806707] (-) TimerEvent: {}
+[22.907308] (-) TimerEvent: {}
+[23.009619] (-) TimerEvent: {}
+[23.111597] (-) TimerEvent: {}
+[23.212179] (-) TimerEvent: {}
+[23.312724] (-) TimerEvent: {}
+[23.413197] (-) TimerEvent: {}
+[23.513611] (-) TimerEvent: {}
+[23.614014] (-) TimerEvent: {}
+[23.714571] (-) TimerEvent: {}
+[23.815167] (-) TimerEvent: {}
+[23.915545] (-) TimerEvent: {}
+[24.015966] (-) TimerEvent: {}
+[24.116367] (-) TimerEvent: {}
+[24.216772] (-) TimerEvent: {}
+[24.317130] (-) TimerEvent: {}
+[24.417631] (-) TimerEvent: {}
+[24.518119] (-) TimerEvent: {}
+[24.618541] (-) TimerEvent: {}
+[24.719047] (-) TimerEvent: {}
+[24.819615] (-) TimerEvent: {}
+[24.920219] (-) TimerEvent: {}
+[25.023132] (-) TimerEvent: {}
+[25.129222] (-) TimerEvent: {}
+[25.230582] (-) TimerEvent: {}
+[25.332712] (-) TimerEvent: {}
+[25.433213] (-) TimerEvent: {}
+[25.533629] (-) TimerEvent: {}
+[25.634232] (-) TimerEvent: {}
+[25.734855] (-) TimerEvent: {}
+[25.835365] (-) TimerEvent: {}
+[25.936923] (-) TimerEvent: {}
+[26.037469] (-) TimerEvent: {}
+[26.138434] (-) TimerEvent: {}
+[26.239201] (-) TimerEvent: {}
+[26.343618] (-) TimerEvent: {}
+[26.444182] (-) TimerEvent: {}
+[26.544730] (-) TimerEvent: {}
+[26.645162] (-) TimerEvent: {}
+[26.745592] (-) TimerEvent: {}
+[26.845951] (-) TimerEvent: {}
+[26.946294] (-) TimerEvent: {}
+[27.046707] (-) TimerEvent: {}
+[27.147183] (-) TimerEvent: {}
+[27.247596] (-) TimerEvent: {}
+[27.348056] (-) TimerEvent: {}
+[27.448466] (-) TimerEvent: {}
+[27.549215] (-) TimerEvent: {}
+[27.649639] (-) TimerEvent: {}
+[27.750063] (-) TimerEvent: {}
+[27.850443] (-) TimerEvent: {}
+[27.950908] (-) TimerEvent: {}
+[28.052381] (-) TimerEvent: {}
+[28.153034] (-) TimerEvent: {}
+[28.255792] (-) TimerEvent: {}
+[28.356464] (-) TimerEvent: {}
+[28.456967] (-) TimerEvent: {}
+[28.557525] (-) TimerEvent: {}
+[28.658378] (-) TimerEvent: {}
+[28.759477] (-) TimerEvent: {}
+[28.861863] (-) TimerEvent: {}
+[28.962538] (-) TimerEvent: {}
+[29.063090] (-) TimerEvent: {}
+[29.163655] (-) TimerEvent: {}
+[29.264609] (-) TimerEvent: {}
+[29.366787] (-) TimerEvent: {}
+[29.467375] (-) TimerEvent: {}
+[29.567872] (-) TimerEvent: {}
+[29.668306] (-) TimerEvent: {}
+[29.768850] (-) TimerEvent: {}
+[29.869566] (-) TimerEvent: {}
+[29.970087] (-) TimerEvent: {}
+[30.070484] (-) TimerEvent: {}
+[30.170933] (-) TimerEvent: {}
+[30.271321] (-) TimerEvent: {}
+[30.371733] (-) TimerEvent: {}
+[30.472133] (-) TimerEvent: {}
+[30.572752] (-) TimerEvent: {}
+[30.673426] (-) TimerEvent: {}
+[30.773969] (-) TimerEvent: {}
+[30.874377] (-) TimerEvent: {}
+[30.974779] (-) TimerEvent: {}
+[31.075365] (-) TimerEvent: {}
+[31.176054] (-) TimerEvent: {}
+[31.276527] (-) TimerEvent: {}
+[31.377109] (-) TimerEvent: {}
+[31.477588] (-) TimerEvent: {}
+[31.578076] (-) TimerEvent: {}
+[31.678838] (-) TimerEvent: {}
+[31.782706] (-) TimerEvent: {}
+[31.883203] (-) TimerEvent: {}
+[31.984586] (-) TimerEvent: {}
+[32.086144] (-) TimerEvent: {}
+[32.186820] (-) TimerEvent: {}
+[32.287700] (-) TimerEvent: {}
+[32.388503] (-) TimerEvent: {}
+[32.489065] (-) TimerEvent: {}
+[32.589544] (-) TimerEvent: {}
+[32.691248] (-) TimerEvent: {}
+[32.794938] (-) TimerEvent: {}
+[32.895411] (-) TimerEvent: {}
+[32.996035] (-) TimerEvent: {}
+[33.096441] (-) TimerEvent: {}
+[33.196798] (-) TimerEvent: {}
+[33.297152] (-) TimerEvent: {}
+[33.397626] (-) TimerEvent: {}
+[33.498326] (-) TimerEvent: {}
+[33.601801] (-) TimerEvent: {}
+[33.702361] (-) TimerEvent: {}
+[33.803076] (-) TimerEvent: {}
+[33.903555] (-) TimerEvent: {}
+[34.003975] (-) TimerEvent: {}
+[34.104495] (-) TimerEvent: {}
+[34.205215] (-) TimerEvent: {}
+[34.305575] (-) TimerEvent: {}
+[34.406020] (-) TimerEvent: {}
+[34.506403] (-) TimerEvent: {}
+[34.606844] (-) TimerEvent: {}
+[34.707299] (-) TimerEvent: {}
+[34.807726] (-) TimerEvent: {}
+[34.908082] (-) TimerEvent: {}
+[35.008431] (-) TimerEvent: {}
+[35.108796] (-) TimerEvent: {}
+[35.209193] (-) TimerEvent: {}
+[35.309576] (-) TimerEvent: {}
+[35.409961] (-) TimerEvent: {}
+[35.510369] (-) TimerEvent: {}
+[35.610735] (-) TimerEvent: {}
+[35.711099] (-) TimerEvent: {}
+[35.811501] (-) TimerEvent: {}
+[35.912023] (-) TimerEvent: {}
+[36.012680] (-) TimerEvent: {}
+[36.113140] (-) TimerEvent: {}
+[36.213727] (-) TimerEvent: {}
+[36.314363] (-) TimerEvent: {}
+[36.414755] (-) TimerEvent: {}
+[36.515102] (-) TimerEvent: {}
+[36.615466] (-) TimerEvent: {}
+[36.715879] (-) TimerEvent: {}
+[36.816235] (-) TimerEvent: {}
+[36.916600] (-) TimerEvent: {}
+[37.017036] (-) TimerEvent: {}
+[37.117440] (-) TimerEvent: {}
+[37.217832] (-) TimerEvent: {}
+[37.318194] (-) TimerEvent: {}
+[37.418574] (-) TimerEvent: {}
+[37.518920] (-) TimerEvent: {}
+[37.619280] (-) TimerEvent: {}
+[37.719702] (-) TimerEvent: {}
+[37.820053] (-) TimerEvent: {}
+[37.920394] (-) TimerEvent: {}
+[38.020739] (-) TimerEvent: {}
+[38.121094] (-) TimerEvent: {}
+[38.221475] (-) TimerEvent: {}
+[38.321836] (-) TimerEvent: {}
+[38.422178] (-) TimerEvent: {}
+[38.522537] (-) TimerEvent: {}
+[38.622939] (-) TimerEvent: {}
+[38.723297] (-) TimerEvent: {}
+[38.823702] (-) TimerEvent: {}
+[38.924056] (-) TimerEvent: {}
+[39.024414] (-) TimerEvent: {}
+[39.124817] (-) TimerEvent: {}
+[39.225169] (-) TimerEvent: {}
+[39.325574] (-) TimerEvent: {}
+[39.425948] (-) TimerEvent: {}
+[39.526323] (-) TimerEvent: {}
+[39.626734] (-) TimerEvent: {}
+[39.727095] (-) TimerEvent: {}
+[39.827457] (-) TimerEvent: {}
+[39.927875] (-) TimerEvent: {}
+[40.028242] (-) TimerEvent: {}
+[40.128647] (-) TimerEvent: {}
+[40.229011] (-) TimerEvent: {}
+[40.329373] (-) TimerEvent: {}
+[40.429768] (-) TimerEvent: {}
+[40.530158] (-) TimerEvent: {}
+[40.630541] (-) TimerEvent: {}
+[40.730954] (-) TimerEvent: {}
+[40.831372] (-) TimerEvent: {}
+[40.931888] (-) TimerEvent: {}
+[41.032301] (-) TimerEvent: {}
+[41.132711] (-) TimerEvent: {}
+[41.233088] (-) TimerEvent: {}
+[41.333444] (-) TimerEvent: {}
+[41.433824] (-) TimerEvent: {}
+[41.534200] (-) TimerEvent: {}
+[41.634636] (-) TimerEvent: {}
+[41.735016] (-) TimerEvent: {}
+[41.835379] (-) TimerEvent: {}
+[41.935786] (-) TimerEvent: {}
+[42.036293] (-) TimerEvent: {}
+[42.136714] (-) TimerEvent: {}
+[42.237232] (-) TimerEvent: {}
+[42.337871] (-) TimerEvent: {}
+[42.438246] (-) TimerEvent: {}
+[42.456166] (orbslam3) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable mono\x1b[0m\n'}
+[42.538392] (-) TimerEvent: {}
+[42.638847] (-) TimerEvent: {}
+[42.739275] (-) TimerEvent: {}
+[42.839833] (-) TimerEvent: {}
+[42.940510] (-) TimerEvent: {}
+[43.041019] (-) TimerEvent: {}
+[43.141585] (-) TimerEvent: {}
+[43.242337] (-) TimerEvent: {}
+[43.342853] (-) TimerEvent: {}
+[43.443299] (-) TimerEvent: {}
+[43.543806] (-) TimerEvent: {}
+[43.644552] (-) TimerEvent: {}
+[43.745170] (-) TimerEvent: {}
+[43.846063] (-) TimerEvent: {}
+[43.946870] (-) TimerEvent: {}
+[44.047457] (-) TimerEvent: {}
+[44.147960] (-) TimerEvent: {}
+[44.248349] (-) TimerEvent: {}
+[44.348768] (-) TimerEvent: {}
+[44.449232] (-) TimerEvent: {}
+[44.549683] (-) TimerEvent: {}
+[44.650123] (-) TimerEvent: {}
+[44.750504] (-) TimerEvent: {}
+[44.850975] (-) TimerEvent: {}
+[44.951386] (-) TimerEvent: {}
+[45.051771] (-) TimerEvent: {}
+[45.152170] (-) TimerEvent: {}
+[45.252616] (-) TimerEvent: {}
+[45.353051] (-) TimerEvent: {}
+[45.453404] (-) TimerEvent: {}
+[45.553765] (-) TimerEvent: {}
+[45.654146] (-) TimerEvent: {}
+[45.754527] (-) TimerEvent: {}
+[45.767820] (orbslam3) StdoutLine: {'line': b'[100%] Built target mono\n'}
+[45.793777] (orbslam3) CommandEnded: {'returncode': 0}
+[45.794621] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'install'}
+[45.814022] (orbslam3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roverto/ros2_ws/build/orbslam3'], 'cwd': '/home/roverto/ros2_ws/build/orbslam3', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1717', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/roverto/image_publisher/install:/home/roverto/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'roverto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/bin:/opt/ros/jazzy/bin:/home/roverto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/clanker:@/tmp/.ICE-unix/1685,unix/clanker:/tmp/.ICE-unix/1685', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4380be03_21c1_4f64_b269_e4b1203998af', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.EGCPM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.160', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/roverto/ros2_ws/build/orbslam3', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/roverto/image_publisher/install/opencv_tools:/opt/ros/jazzy'}), 'shell': False}
+[45.830420] (orbslam3) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[45.831139] (orbslam3) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[45.831610] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/lib/orbslam3/mono\n'}
+[45.831915] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3\n'}
+[45.832138] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3\n'}
+[45.832365] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh\n'}
+[45.832604] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv\n'}
+[45.832841] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh\n'}
+[45.833046] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv\n'}
+[45.833244] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash\n'}
+[45.833439] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh\n'}
+[45.833633] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh\n'}
+[45.833838] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv\n'}
+[45.833984] (orbslam3) StdoutLine: {'line': b'-- Symlinking: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.dsv\n'}
+[45.854528] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3\n'}
+[45.854826] (-) TimerEvent: {}
+[45.854985] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake\n'}
+[45.855137] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake\n'}
+[45.856840] (orbslam3) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roverto/ros2_ws/install/orbslam3/share/orbslam3/package.xml\n'}
+[45.860818] (orbslam3) CommandEnded: {'returncode': 0}
+[45.897677] (orbslam3) JobEnded: {'identifier': 'orbslam3', 'rc': 0}
+[45.901873] (-) EventReactorShutdown: {}

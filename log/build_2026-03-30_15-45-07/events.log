@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.000326] (-) JobUnselected: {'identifier': 'camera_ros'}
+[0.000560] (-) JobUnselected: {'identifier': 'custom_camera_publisher'}
+[0.000647] (-) JobUnselected: {'identifier': 'orbslam3'}
+[0.000669] (-) JobUnselected: {'identifier': 'ros2_orb_slam3'}
+[0.000690] (-) JobUnselected: {'identifier': 'rovultrasonic'}
+[0.000713] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.000981] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.099600] (-) TimerEvent: {}
+[0.201646] (-) TimerEvent: {}
+[0.303276] (-) TimerEvent: {}
+[0.403684] (-) TimerEvent: {}
+[0.504164] (-) TimerEvent: {}
+[0.605393] (-) TimerEvent: {}
+[0.705964] (-) TimerEvent: {}
+[0.809974] (-) TimerEvent: {}
+[0.910531] (-) TimerEvent: {}
+[1.010935] (-) TimerEvent: {}
+[1.112037] (-) TimerEvent: {}
+[1.212432] (-) TimerEvent: {}
+[1.312849] (-) TimerEvent: {}
+[1.413484] (-) TimerEvent: {}
+[1.513867] (-) TimerEvent: {}
+[1.614293] (-) TimerEvent: {}
+[1.714750] (-) TimerEvent: {}
+[1.815171] (-) TimerEvent: {}
+[1.915548] (-) TimerEvent: {}
+[2.016096] (-) TimerEvent: {}
+[2.117565] (-) TimerEvent: {}
+[2.218093] (-) TimerEvent: {}
+[2.321645] (-) TimerEvent: {}
+[2.422255] (-) TimerEvent: {}
+[2.459161] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_controller', 'build', '--build-base', '/home/roverto/ros2_ws/build/motor_controller/build', 'install', '--record', '/home/roverto/ros2_ws/build/motor_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/ros2_ws/src/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'SSH_CLIENT': '192.168.1.137 50463 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/roverto/ros2_ws/install:/home/roverto/image_publisher/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/roverto/.local/bin:/usr/local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:13.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/rovultrasonic:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/roverto/ros2_ws/build/motor_controller', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'SSH_CONNECTION': '192.168.1.137 50463 192.168.1.128 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/ros2_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.522618] (-) TimerEvent: {}
+[2.623503] (-) TimerEvent: {}
+[2.723932] (-) TimerEvent: {}
+[2.824345] (-) TimerEvent: {}
+[2.925103] (-) TimerEvent: {}
+[3.025961] (-) TimerEvent: {}
+[3.080622] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.081423] (motor_controller) StdoutLine: {'line': b'creating ../../build/motor_controller/motor_controller.egg-info\n'}
+[3.125993] (-) TimerEvent: {}
+[3.129270] (motor_controller) StdoutLine: {'line': b'writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO\n'}
+[3.130065] (motor_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt\n'}
+[3.130494] (motor_controller) StdoutLine: {'line': b'writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt\n'}
+[3.130807] (motor_controller) StdoutLine: {'line': b'writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt\n'}
+[3.131044] (motor_controller) StdoutLine: {'line': b'writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt\n'}
+[3.131275] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.225081] (motor_controller) StdoutLine: {'line': b"reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.226062] (-) TimerEvent: {}
+[3.226529] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.226721] (motor_controller) StdoutLine: {'line': b'running build\n'}
+[3.226859] (motor_controller) StdoutLine: {'line': b'running build_py\n'}
+[3.227042] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/motor_controller/build\n'}
+[3.227188] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/motor_controller/build/lib\n'}
+[3.227317] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.227487] (motor_controller) StdoutLine: {'line': b'copying motor_controller/__init__.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.227642] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.228736] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motors_forward.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.229945] (motor_controller) StdoutLine: {'line': b'running install\n'}
+[3.242502] (motor_controller) StdoutLine: {'line': b'running install_lib\n'}
+[3.274123] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.274486] (motor_controller) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.274650] (motor_controller) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.274856] (motor_controller) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/motors_forward.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.275673] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/__init__.py to __init__.cpython-312.pyc\n'}
+[3.276102] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_controller_node.py to motor_controller_node.cpython-312.pyc\n'}
+[3.278251] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motors_forward.py to motors_forward.cpython-312.pyc\n'}
+[3.279334] (motor_controller) StdoutLine: {'line': b'running install_data\n'}
+[3.279555] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index\n'}
+[3.279709] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index\n'}
+[3.279847] (motor_controller) StdoutLine: {'line': b'creating /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[3.279964] (motor_controller) StdoutLine: {'line': b'copying resource/motor_controller -> /home/roverto/ros2_ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[3.280103] (motor_controller) StdoutLine: {'line': b'copying package.xml -> /home/roverto/ros2_ws/install/motor_controller/share/motor_controller\n'}
+[3.280355] (motor_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.324304] (motor_controller) StdoutLine: {'line': b'Copying ../../build/motor_controller/motor_controller.egg-info to /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info\n'}
+[3.326653] (-) TimerEvent: {}
+[3.327166] (motor_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.426909] (-) TimerEvent: {}
+[3.528844] (-) TimerEvent: {}
+[3.630549] (-) TimerEvent: {}
+[3.667898] (motor_controller) StdoutLine: {'line': b'Installing motor_controller_node script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller\n'}
+[3.668320] (motor_controller) StdoutLine: {'line': b'Installing motors_forward script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller\n'}
+[3.668878] (motor_controller) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/ros2_ws/build/motor_controller/install.log'\n"}
+[3.730682] (-) TimerEvent: {}
+[3.822527] (motor_controller) CommandEnded: {'returncode': 0}
+[3.830797] (-) TimerEvent: {}
+[3.856619] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[3.857902] (-) EventReactorShutdown: {}
