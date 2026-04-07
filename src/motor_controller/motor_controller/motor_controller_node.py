@@ -6,12 +6,12 @@ import board
 from adafruit_motorkit import MotorKit
 from gpiozero import Motor, PWMOutputDevice
 
+
 class MotorController(Node):
 
     def __init__(self):
         super().__init__('motor_controller')
 
-        # Subscribe to cmd_vel
         self.subscription = self.create_subscription(
             Twist,
             '/cmd_vel',
@@ -22,165 +22,129 @@ class MotorController(Node):
         # ---------------- MOTOR SETUP ----------------
         self.kit = MotorKit(i2c=board.I2C())
 
-        # L298N motors (Middle Section)
-        self.motorA = Motor(forward=17, backward=27)
-        self.motorB = Motor(forward=24, backward=23)
-
+        # L298N motors (Back Section: MA=BL, MB=BR)
+        self.motorA = Motor(forward=17, backward=27) # BL
+        self.motorB = Motor(forward=24, backward=23) # BR
         self.enableA = PWMOutputDevice(22)
         self.enableB = PWMOutputDevice(25)
 
-        # ==========================================
-        # 1. HARDWARE MAPPING & INVERSIONS
-        # ==========================================
-        # Based on your previous code, some motors need negative values to go forward.
-        # User note: Middle section must be fully reversed for skid-steer mechanics.
-        self.HW_INV = {
-            'FL': -1.0,  # Front Left (Motor 1)
-            'FR':  1.0,  # Front Right (Motor 2)
-            'ML': -1.0,  # Middle Left (Motor A - L298N) - Reversed per instructions
-            'MR': -1.0,  # Middle Right (Motor B - L298N) - Reversed per instructions
-            'BL': -1.0,  # Back Left (Motor 3)
-            'BR':  1.0   # Back Right (Motor 4)
-        }
-
-        # Base multiplier to easily speed up/slow down the entire rover
-        self.MASTER_SPEED = 0.8 
-
-        # ==========================================
-        # 2. MOVEMENT PROFILES (THE TUNING ZONE)
-        # ==========================================
-        # Positive = Forward, Negative = Backward. 
-        # Range: -1.0 to 1.0
-        # Physics Fix: Front pulls hardest (prevents dip), Rear drags slightly (prevents jackknife)
+        # ---------------- TENSION PARAMETERS ----------------
+        self.pull_power = 1.0   # The leading section
+        self.mid_power = 0.6    # The support section
+        self.drag_power = 0.3   # The trailing section
         
-        self.V_FORWARD = {
-            'FL': 1.0,  'FR': 1.0,
-            'ML': 0.9,  'MR': 0.9,
-            'BL': 0.8,  'BR': 0.8
-        }
+        # Turn parameters
+        self.turn_lead_power = 0.9      # Front power (The "Tug")
+        self.mid_counter_steer = 0.15   # Mid counter-push
+        self.back_turn_power = 0.20     # Back follow power (Reduced to prevent jackknife)
 
-        self.V_BACKWARD = {
-            'FL': -0.8, 'FR': -0.8, # Front drags
-            'ML': -0.9, 'MR': -0.9,
-            'BL': -1.0, 'BR': -1.0  # Rear pulls hardest in reverse
-        }
+    # ---------------- DIRECTION LOGIC (M1=FR, M2=FL, M4=ML, M3=MR) ----------------
 
-        self.V_TURN_LEFT_IN_PLACE = {
-            'FL': -0.8, 'FR': 0.8,
-            'ML': -1.0, 'MR': 1.0,
-            'BL': -0.8, 'BR': 0.8
-        }
+    def set_front(self, speed):
+        # M2=FL (+ fwd), M1=FR (- fwd)
+        self.kit.motor2.throttle = speed
+        self.kit.motor1.throttle = -speed
 
-        self.V_TURN_RIGHT_IN_PLACE = {
-            'FL': 0.8,  'FR': -0.8,
-            'ML': 1.0,  'MR': -1.0,
-            'BL': 0.8,  'BR': -0.8
-        }
+    def set_mid(self, speed):
+        # M4=ML (+ fwd), M3=MR (- fwd)
+        self.kit.motor4.throttle = speed
+        self.kit.motor3.throttle = -speed
 
-        # SWEEPING TURNS (Moving Forward while turning)
-        # Outside wheels spin fast, inside wheels spin slow
-        self.V_SWEEP_FWD_LEFT = {
-            'FL': 0.3,  'FR': 1.0,
-            'ML': 0.2,  'MR': 0.9,
-            'BL': 0.1,  'BR': 0.8
-        }
-
-        self.V_SWEEP_FWD_RIGHT = {
-            'FL': 1.0,  'FR': 0.3,
-            'ML': 0.9,  'MR': 0.2,
-            'BL': 0.8,  'BR': 0.1
-        }
-
-        # SWEEPING TURNS (Moving Backward while turning)
-        self.V_SWEEP_BWD_LEFT = {
-            'FL': -0.1, 'FR': -0.8,
-            'ML': -0.2, 'MR': -0.9,
-            'BL': -0.3, 'BR': -1.0
-        }
-
-        self.V_SWEEP_BWD_RIGHT = {
-            'FL': -0.8, 'FR': -0.1,
-            'ML': -0.9, 'MR': -0.2,
-            'BL': -1.0, 'BR': -0.3
-        }
-
-        self.V_STOP = {
-            'FL': 0.0, 'FR': 0.0,
-            'ML': 0.0, 'MR': 0.0,
-            'BL': 0.0, 'BR': 0.0
-        }
-
-    # ---------------- LOW-LEVEL MOTOR EXECUTION ----------------
-    def apply_speeds(self, profile):
-        """ Translates high-level percentages to hardware-specific commands. """
-        
-        # Calculate raw speeds with Master multiplier and Hardware Inversions
-        fl_raw = profile['FL'] * self.MASTER_SPEED * self.HW_INV['FL']
-        fr_raw = profile['FR'] * self.MASTER_SPEED * self.HW_INV['FR']
-        bl_raw = profile['BL'] * self.MASTER_SPEED * self.HW_INV['BL']
-        br_raw = profile['BR'] * self.MASTER_SPEED * self.HW_INV['BR']
-        
-        ml_raw = profile['ML'] * self.MASTER_SPEED * self.HW_INV['ML']
-        mr_raw = profile['MR'] * self.MASTER_SPEED * self.HW_INV['MR']
-
-        # 1. Apply to I2C Motors (Expects -1.0 to 1.0)
-        # Using max/min to clamp values safely
-        self.kit.motor1.throttle = max(min(fl_raw, 1.0), -1.0)
-        self.kit.motor2.throttle = max(min(fr_raw, 1.0), -1.0)
-        self.kit.motor3.throttle = max(min(bl_raw, 1.0), -1.0)
-        self.kit.motor4.throttle = max(min(br_raw, 1.0), -1.0)
-
-        # 2. Apply to L298N Motors (gpiozero Motor expects 0.0 to 1.0)
-        self._set_l298n(self.motorA, self.enableA, ml_raw)
-        self._set_l298n(self.motorB, self.enableB, mr_raw)
-
-    def _set_l298n(self, motor, enable, speed):
-        """ Helper to handle the L298N directional PWM logic """
-        clamped_speed = max(min(speed, 1.0), -1.0)
-        
-        if clamped_speed > 0:
-            motor.forward(clamped_speed)
-            enable.value = 1
-        elif clamped_speed < 0:
-            motor.backward(abs(clamped_speed)) # backward() requires a positive number
-            enable.value = 1
+    def set_back(self, speed):
+        # MA=BL, MB=BR (L298N)
+        if speed > 0:
+            self.motorA.forward()
+            self.motorB.forward()
+        elif speed < 0:
+            self.motorA.backward()
+            self.motorB.backward()
         else:
-            motor.stop()
-            enable.value = 0
+            self.motorA.stop()
+            self.motorB.stop()
+        
+        self.enableA.value = abs(speed)
+        self.enableB.value = abs(speed)
 
-    # ---------------- CMD_VEL CALLBACK ----------------
+    def stop_all(self):
+        self.kit.motor1.throttle = 0
+        self.kit.motor2.throttle = 0
+        self.kit.motor3.throttle = 0
+        self.kit.motor4.throttle = 0
+        self.enableA.value = 0
+        self.enableB.value = 0
+        self.motorA.stop()
+        self.motorB.stop()
+
+    # ---------------- MOVEMENT STATES ----------------
+
+    def move_forward(self):
+        self.set_front(self.pull_power)
+        self.set_mid(self.mid_power)
+        self.set_back(self.drag_power)
+
+    def move_backward(self):
+        self.set_back(-self.pull_power)
+        self.set_mid(-self.mid_power)
+        self.set_front(-self.drag_power)
+
+    def turn_left(self):
+        """
+        ROBOT PIVOTS LEFT: 
+        Front: Leads with high power (FL Back, FR Fwd)
+        Back:  Follows with low power (BL Back, BR Fwd)
+        Mid:   Counter-steers (ML Fwd, MR Back)
+        """
+        # Front (High Power)
+        self.kit.motor2.throttle = -self.turn_lead_power # FL Back
+        self.kit.motor1.throttle = -self.turn_lead_power # FR Fwd
+        
+        # Back (Low Follow Power)
+        self.motorA.backward() # BL Back
+        self.motorB.forward()  # BR Fwd
+        self.enableA.value = self.back_turn_power
+        self.enableB.value = self.back_turn_power
+
+        # Middle Counter-Steer
+        self.kit.motor4.throttle = self.mid_counter_steer  # ML Fwd
+        self.kit.motor3.throttle = self.mid_counter_steer  # MR Back
+
+    def turn_right(self):
+        """
+        ROBOT PIVOTS RIGHT:
+        Front: Leads with high power (FL Fwd, FR Back)
+        Back:  Follows with low power (BL Fwd, BR Back)
+        Mid:   Counter-steers (ML Back, MR Fwd)
+        """
+        # Front (High Power)
+        self.kit.motor2.throttle = self.turn_lead_power  # FL Fwd
+        self.kit.motor1.throttle = self.turn_lead_power  # FR Back
+        
+        # Back (Low Follow Power)
+        self.motorA.forward()  # BL Fwd
+        self.motorB.backward() # BR Back
+        self.enableA.value = self.back_turn_power
+        self.enableB.value = self.back_turn_power
+
+        # Middle Counter-Steer
+        self.kit.motor4.throttle = -self.mid_counter_steer # ML Back
+        self.kit.motor3.throttle = -self.mid_counter_steer # MR Fwd
+
+    # ---------------- CALLBACK ----------------
+
     def cmd_vel_callback(self, msg):
         linear = msg.linear.x
         angular = msg.angular.z
 
-        # Decode Twist message into specific states
-        if linear > 0 and angular == 0:
-            self.apply_speeds(self.V_FORWARD)
-            
-        elif linear < 0 and angular == 0:
-            self.apply_speeds(self.V_BACKWARD)
-            
-        elif linear == 0 and angular > 0:
-            self.apply_speeds(self.V_TURN_LEFT_IN_PLACE)
-            
-        elif linear == 0 and angular < 0:
-            self.apply_speeds(self.V_TURN_RIGHT_IN_PLACE)
-            
-        elif linear > 0 and angular > 0:
-            self.apply_speeds(self.V_SWEEP_FWD_LEFT)
-            
-        elif linear > 0 and angular < 0:
-            self.apply_speeds(self.V_SWEEP_FWD_RIGHT)
-            
-        elif linear < 0 and angular > 0:
-            # Reversing while turning left means the rear swings to the right
-            self.apply_speeds(self.V_SWEEP_BWD_LEFT)
-            
-        elif linear < 0 and angular < 0:
-            self.apply_speeds(self.V_SWEEP_BWD_RIGHT)
-            
+        if linear > 0:
+            self.move_forward()
+        elif linear < 0:
+            self.move_backward()
+        elif angular > 0:
+            self.turn_left()
+        elif angular < 0:
+            self.turn_right()
         else:
-            self.apply_speeds(self.V_STOP)
+            self.stop_all()
 
 
 def main(args=None):

@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000415] (-) JobUnselected: {'identifier': 'RovControl'}
+[0.000795] (-) JobUnselected: {'identifier': 'camera_ros'}
+[0.000980] (-) JobUnselected: {'identifier': 'custom_camera_publisher'}
+[0.001197] (-) JobUnselected: {'identifier': 'orbslam3'}
+[0.001257] (-) JobUnselected: {'identifier': 'ros2_orb_slam3'}
+[0.001361] (-) JobUnselected: {'identifier': 'rovultrasonic'}
+[0.001387] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.001412] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.099713] (-) TimerEvent: {}
+[0.200316] (-) TimerEvent: {}
+[0.300721] (-) TimerEvent: {}
+[0.401330] (-) TimerEvent: {}
+[0.501958] (-) TimerEvent: {}
+[0.634039] (-) TimerEvent: {}
+[0.734438] (-) TimerEvent: {}
+[0.834799] (-) TimerEvent: {}
+[0.935159] (-) TimerEvent: {}
+[1.035517] (-) TimerEvent: {}
+[1.135920] (-) TimerEvent: {}
+[1.236284] (-) TimerEvent: {}
+[1.336734] (-) TimerEvent: {}
+[1.437085] (-) TimerEvent: {}
+[1.537419] (-) TimerEvent: {}
+[1.637820] (-) TimerEvent: {}
+[1.738181] (-) TimerEvent: {}
+[1.838531] (-) TimerEvent: {}
+[1.938886] (-) TimerEvent: {}
+[2.039208] (-) TimerEvent: {}
+[2.139559] (-) TimerEvent: {}
+[2.239959] (-) TimerEvent: {}
+[2.340293] (-) TimerEvent: {}
+[2.440623] (-) TimerEvent: {}
+[2.540949] (-) TimerEvent: {}
+[2.641296] (-) TimerEvent: {}
+[2.741706] (-) TimerEvent: {}
+[2.842260] (-) TimerEvent: {}
+[2.857796] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_controller', 'build', '--build-base', '/home/roverto/ros2_ws/build/motor_controller/build', 'install', '--record', '/home/roverto/ros2_ws/build/motor_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roverto/ros2_ws/src/motor_controller', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'roverto', 'SSH_CLIENT': '192.168.1.137 61730 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib/aarch64-linux-gnu:/usr/local/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh', 'HOME': '/home/roverto', 'OLDPWD': '/home/roverto', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a94da492-6e3e-4f14-a6d4-4f6484077fd9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/roverto/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/roverto/image_publisher/install:/home/roverto/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'roverto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/home/roverto/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/home/roverto/.local/bin:/usr/local/bin:/opt/ros/jazzy/bin:/home/roverto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/roverto/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/roverto/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-d62402bba9d8062c.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/roverto/.vscode-server/data/User/workspaceStorage/00a8b7f65f158992342c363cc209ce90/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e1caad8f77.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/roverto/image_publisher/install/opencv_tools:/home/roverto/ros2_ws/install/rovultrasonic:/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/home/roverto/ros2_ws/install/motor_controller:/home/roverto/ros2_ws/install/RovControl:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'GST_PLUGIN_PATH': '/usr/local/lib/aarch64-linux-gnu/gstreamer-1.0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/roverto/ros2_ws/build/motor_controller', 'LIBCAMERA_IPA_MODULE_PATH': '/usr/local/lib/aarch64-linux-gnu/libcamera', 'SSH_CONNECTION': '192.168.1.137 61730 192.168.1.128 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/roverto/ros2_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:/home/roverto/image_publisher/build/opencv_tools:/home/roverto/image_publisher/install/opencv_tools/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/rovultrasonic/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages:/home/roverto/ros2_ws/install/RovControl/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/roverto/ros2_ws/install/ros2_orb_slam3:/home/roverto/ros2_ws/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.942360] (-) TimerEvent: {}
+[3.042864] (-) TimerEvent: {}
+[3.143667] (-) TimerEvent: {}
+[3.244171] (-) TimerEvent: {}
+[3.320727] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.344286] (-) TimerEvent: {}
+[3.350846] (motor_controller) StdoutLine: {'line': b'writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO\n'}
+[3.351773] (motor_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt\n'}
+[3.353167] (motor_controller) StdoutLine: {'line': b'writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt\n'}
+[3.353750] (motor_controller) StdoutLine: {'line': b'writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt\n'}
+[3.354342] (motor_controller) StdoutLine: {'line': b'writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt\n'}
+[3.417483] (motor_controller) StdoutLine: {'line': b"reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.418465] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[3.418975] (motor_controller) StdoutLine: {'line': b'running build\n'}
+[3.419169] (motor_controller) StdoutLine: {'line': b'running build_py\n'}
+[3.420449] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller\n'}
+[3.420701] (motor_controller) StdoutLine: {'line': b'running install\n'}
+[3.430359] (motor_controller) StdoutLine: {'line': b'running install_lib\n'}
+[3.444380] (-) TimerEvent: {}
+[3.460976] (motor_controller) StdoutLine: {'line': b'copying /home/roverto/ros2_ws/build/motor_controller/build/lib/motor_controller/motor_controller_node.py -> /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller\n'}
+[3.462172] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller/motor_controller_node.py to motor_controller_node.cpython-312.pyc\n'}
+[3.465075] (motor_controller) StdoutLine: {'line': b'running install_data\n'}
+[3.465407] (motor_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.500231] (motor_controller) StdoutLine: {'line': b"removing '/home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[3.502364] (motor_controller) StdoutLine: {'line': b'Copying ../../build/motor_controller/motor_controller.egg-info to /home/roverto/ros2_ws/install/motor_controller/lib/python3.12/site-packages/motor_controller-0.0.0-py3.12.egg-info\n'}
+[3.503068] (motor_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.544516] (-) TimerEvent: {}
+[3.644973] (-) TimerEvent: {}
+[3.726218] (motor_controller) StdoutLine: {'line': b'Installing motor_controller_node script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller\n'}
+[3.727109] (motor_controller) StdoutLine: {'line': b'Installing motors_forward script to /home/roverto/ros2_ws/install/motor_controller/lib/motor_controller\n'}
+[3.728715] (motor_controller) StdoutLine: {'line': b"writing list of installed files to '/home/roverto/ros2_ws/build/motor_controller/install.log'\n"}
+[3.745097] (-) TimerEvent: {}
+[3.832767] (motor_controller) CommandEnded: {'returncode': 0}
+[3.845294] (-) TimerEvent: {}
+[3.868939] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[3.870289] (-) EventReactorShutdown: {}
