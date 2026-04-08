@@ -1,0 +1,55 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+#--------------------------------------------------------------------------------------------
+File.version: "1.0"
+
+Camera.type: "PinHole"
+
+# Camera resolution
+Camera.width: 752
+Camera.height: 480
+
+# Camera calibration and distortion parameters (extracted from your data)
+# fx, fy, cx, cy from camera_matrix
+Camera1.fx: 940.85269
+Camera1.fy: 938.10871
+Camera1.cx: 383.41181
+Camera1.cy: 234.01118
+
+# Distortion coefficients: [k1, k2, p1, p2, k3]
+Camera1.k1: 0.012275
+Camera1.k2: 0.205665
+Camera1.p1: -0.001651
+Camera1.p2: 0.003243
+Camera1.k3: 0.0
+
+# Camera frames per second 
+Camera.fps: 22
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
